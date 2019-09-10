@@ -1,0 +1,207 @@
+@keyframes animatedBackground {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 50% 50%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+@keyframes animatedHeaderText-left {
+  0%, 50%, 100% {
+    backface-visibility: hidden;
+  }
+  0% {
+    opacity: 0;
+    transform: translate(-4rem);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translate(5rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}
+@keyframes animatedHeaderText-right {
+  0%, 50%, 100% {
+    backface-visibility: hidden;
+  }
+  0% {
+    opacity: 0;
+    transform: translate(5rem);
+  }
+  50% {
+    opacity: 0.3;
+    transform: translate(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(0rem);
+  }
+}
+@keyframes animatedMainText {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.header-font-big {
+  text-transform: uppercase;
+  font-family: lato;
+  font-size: 3rem;
+  letter-spacing: 1rem;
+  font-weight: 600;
+}
+
+.header-font-mid {
+  text-transform: uppercase;
+  font-family: lato;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+  font-weight: 600;
+}
+
+.header-font-small {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.4rem;
+}
+
+.mainText {
+  text-transform: uppercase;
+  font-family: lato;
+  word-spacing: 0.2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.8rem;
+  letter-spacing: 0.1rem;
+}
+
+html {
+  font-size: 10px;
+}
+
+* {
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(35deg, rgba(87, 131, 230, 0.5), rgba(135, 206, 233, 0.5), rgba(94, 185, 233, 0.5), rgba(193, 200, 227, 0.5), rgba(136, 100, 205, 0.5), rgba(136, 100, 205, 0.5), rgba(193, 200, 227, 0.5), rgba(94, 185, 233, 0.5), rgba(135, 206, 233, 0.5), rgba(87, 131, 230, 0.5));
+  background-size: 5000px;
+  animation: animatedBackground 20s linear backwards infinite;
+  backface-visibility: hidden;
+  background-repeat: no-repeat;
+}
+
+.section1-header {
+  float: left;
+  clear: both;
+  width: 50vw;
+  height: 100vh;
+  position: relative;
+  top: 5rem;
+}
+.section1-header h1 {
+  position: absolute;
+  top: 10rem;
+  left: 4rem;
+  color: #f3f3f3;
+}
+.section1-header h1 span {
+  display: block;
+  margin-left: 2.5rem;
+  animation: animatedHeaderText-left 3s ease-in-out;
+}
+.section1-header h1 span:not(:first-of-type) {
+  display: inline-block;
+  margin-left: 1.5rem;
+  margin-top: 4rem;
+  animation: animatedHeaderText-right 3s ease-in-out;
+}
+.section1-header p {
+  position: absolute;
+  top: 25rem;
+  left: 8rem;
+  width: 38vw;
+  padding-left: 1rem;
+  word-break: break-word;
+  white-space: pre-line;
+  color: #f3f3f3;
+  animation: animatedMainText 3s 3s ease-in-out backwards;
+}
+
+.section2-calculator {
+  float: right;
+  width: 50vw;
+  height: 100vh;
+  animation: animatedMainText 3s 3s ease-in-out backwards;
+}
+.section2-calculator .background-of-form {
+  position: relative;
+  left: -4rem;
+  width: 40%;
+  height: 60%;
+  background-color: rgba(136, 100, 205, 0.5);
+  margin: auto;
+  margin-top: 14rem;
+  border-radius: 3rem;
+}
+.section2-calculator .background-of-form input {
+  background-color: rgba(136, 100, 205, 0);
+  position: relative;
+  left: 5%;
+  margin-top: 4%;
+  width: 90%;
+  height: 20%;
+  border-top-left-radius: 3rem;
+  border-top-right-radius: 3rem;
+  border: none;
+  color: #f3f3f3;
+  padding-left: 0.8rem;
+  padding-top: 2.5rem;
+}
+.section2-calculator .main-calculator {
+  width: 100%;
+  height: 75%;
+  margin-bottom: 0;
+}
+.section2-calculator .main-calculator table {
+  width: 90%;
+  height: 100%;
+  margin: auto;
+}
+.section2-calculator .main-calculator table tr .blue-bottons {
+  background-color: rgba(87, 131, 230, 0.5);
+}
+.section2-calculator .main-calculator table tr .yellow-color {
+  background-color: rgba(245, 245, 102, 0.844);
+}
+.section2-calculator .main-calculator table td {
+  border-radius: 1rem;
+  border: none;
+  background-color: rgba(135, 206, 233, 0.5);
+  margin: auto;
+}
+.section2-calculator .main-calculator table td:hover {
+  cursor: pointer;
+  background-color: aquamarine;
+}
+.section2-calculator a, .section2-calculator a:active, .section2-calculator a:link a:visited {
+  color: #f3f3f3;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: translate(35%, 35%);
+}
+
+/*# sourceMappingURL=style.css.map */

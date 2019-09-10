@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="icon" href="img/Calculator_icon.png">
+    <title>My Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+</head>
+<body>
+    <section class="section1-header">
+        <h1 class="header-font-big">
+            <span>welcome to our page</span>
+            <span class="header-font-small">Here you can do some simple calculations by this Calculator</span>
+        </h1>
+        <p class="mainText">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae necessitatibus voluptatem maxime a! Accusamus voluptate id pariatur praesentium quos ducimus excepturi in perspiciatis. 
+            Asperiores officiis tempore temporibus minus, iure illum!
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Ullam possimus temporibus totam alias.
+            Cupiditate veniam voluptate suscipit, quia officiis sint molestiae ab explicabo! Nam labore accusantium esse, ipsam perspiciatis modi.
+        </p>
+    </section>
+
+    <section class="section2-calculator">
+        <form class="background-of-form">
+            <input id ="showContent" name="showContent" value="" class="header-font-mid" type="text" readonly>
+            <div class="main-calculator">
+            <table>
+                <tr class="header-font-mid">
+                    <td class="blue-bottons" onclick="clearText()"><a href="#">C</a></td>
+                    <td onclick="back()" class="blue-bottons"><a href="#">B</a></td>
+                    <td onclick="insert('/')" class="blue-bottons"><a href="#">&divide;</a></td>
+                    <td onclick="insert('*')" class="blue-bottons"><a href="#">&times;</a></td>
+                </tr>
+                <tr class="header-font-mid">
+                    <td onclick="insert(7)"><a href="#">7</a></td>
+                    <td onclick="insert(8)"><a href="#">8</a></td>
+                    <td onclick="insert(9)"><a href="#">9</a></td>
+                    <td onclick="insert('&plus;')" class="blue-bottons"><a href="#">+</a></td>
+                </tr>
+                <tr class="header-font-mid">
+                    <td onclick="insert(4)"><a href="#">4</a></td>
+                    <td onclick="insert(5)"><a href="#">5</a></td>
+                    <td onclick="insert(6)"><a href="#">6</a></td>
+                    <td onclick="insert('-')" class="blue-bottons"><a href="#">-</a></td>
+                </tr>
+                <tr class="header-font-mid">                 
+                    <td onclick="insert(1)"><a href="#">1</a></td>
+                    <td onclick="insert(2)"><a href="#">2</a></td>
+                    <td onclick="insert(3)"><a href="#">3</a></td>
+                    <td onclick="equal()"rowspan="2" class="yellow-color"><a href="#">=</a></td>
+                </tr>
+                <tr class="header-font-mid">
+                    <td onclick="insert(0)" colspan="2"><a href="#">0</a></td>
+                    <td onclick="insert('.')"><a href="#">.</a></td>
+                </tr>
+            </table>
+            </div>
+        </form>
+    </section>
+<script src="calculator.js"></script>
+</body>
+</html>
